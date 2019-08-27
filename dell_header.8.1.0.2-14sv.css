@@ -1,0 +1,131 @@
+/* master CSS these classes define the base structure of the header */
+
+.cl {
+        clear: both;
+}
+
+.row-1 {
+        width: 100%;
+        height: 67px;
+}
+
+.row-2 {
+        width: 100%;
+        height: 18px;
+        padding: 7px 0 0 0;
+        color: #444444;
+        font-size: 11px;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+        width: 404px;
+        float: left
+}
+
+.pipe {
+        width: 1x;
+        float: left
+}
+
+.admin-warning {
+        float: left;
+        width: 400px;
+        height: 39px;
+        text-align: left;
+        padding: 28px 25px 0 0;
+	color: #990000;
+        font-size: 12px;
+
+}
+
+.sub-nav {
+        float: right;
+        width: 300px;
+        height: 39px;
+        text-align: right;
+        padding: 28px 25px 0 0;
+        color: #444444;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+.sub-nav a {
+        color: #444444;
+        text-decoration: none;
+        padding: 0 5px;
+}
+
+.sub-nav a:hover {
+        text-decoration: underline;
+}
+
+.sys-left {
+        float: left;
+        width: 400px;
+        padding: 0 0 0 10px
+}
+
+.sys-right {
+        float: right;
+        width: 400px;
+        padding: 0 10px 0 0;
+        text-align: right
+}
+
+.sys-left a, .sys-right a {
+        color: #444444;
+        text-decoration: none;
+}
+
+.sys-left a:hover, .sys-right a:hover {
+        text-decoration: underline;
+}
+
+/* master CSS these classes define the base structure of the header */
+
+
+/* header type 1 - 3 lockup images */
+
+.header-container {
+        width: 100%;
+        background: url(/images/bar-bg.png) top left repeat-x;
+        height: 92px;
+        min-width: 600px
+}
+
+.portal-header-container {
+        background: url(/images/bar-bg.png) top left repeat-x;
+        height: 92px;
+        min-width: 600px;
+        border: 1px solid #a6a8ba;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+}
+
+.product-logo {
+        float: left;
+        width: 300px
+}
+
+.product-logo-txt {
+        float: left;
+        width: 404px;
+        padding: 25px 0 0 8px;
+        font-size: 14px;
+        font-family: arial,san-serif;
+        color: #606060;
+        text-align: left;
+}
+
+.fileshares-logo-txt {
+        float: left;
+        width: 104px;
+        padding: 25px 0 0 8px;
+        font-size: 14px;
+        font-family: arial,san-serif;
+        color: #606060;
+        text-align: left;
+}
+
+/* header type 1 - 3 lockup images */

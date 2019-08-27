@@ -1,0 +1,44 @@
+WTF is built to run on Apache with a MariaDB (MySQL) DB and PHP.  A simple 
+LAMP/WAMP stack should work fine.
+
+The below items address the steps necessary to get WTF running.  Some 
+knowledge of MariaDB and Apache is assumed.
+
+---------------------------------------------------------------------------
+Database:
+
+First create database from MySQL command line
+
+mysql> CREATE DATABASE vpn;
+
+Create a user account:
+
+CREATE USER 'vpn'@'localhost' IDENTIFIED BY 'password';
+
+GRANT ALL vpn.* TO 'vpn'@'localhost';
+
+From command prompt Import vpn.sql into MySQL
+
+mysql -u vpn -p vpn < mysqlDB/vpn.sql
+
+Modify Database information in /i/conf.php to appropriate values
+
+
+--------------------------------------------------------------------------
+Website:
+
+Modify domain information in /i/conf.php as appropriate
+
+--------------------------------------------------------------------------
+Apache httpd.conf:
+
+Add:
+
+AddType application/x-httpd-php .cgi
+Header set Server "SonicWall"
+ErrorDocument 404 "/cgi-bin/scan.cgi"
+
+Modify:
+Set DocumentRoot to "${INSTALL_DIR}/www/cgi-bin"
+
+Set DirectoryIndex to include welcome.cgi
