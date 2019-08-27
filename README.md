@@ -6,4 +6,4 @@ The current release of WTF contains a deceptive SSL VPN page with a fake credent
 
 This is a very early release, with much more planned.
 
-See SetupNotex.txt for configuration instructions.
+See SetupNotes.txt for configuration instructions.
